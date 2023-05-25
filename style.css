@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 0, 157));
+    padding: 100px;
+}
+.todo{
+    width: 100%;
+    max-width: 450px;
+    background-color: rgb(250, 107, 174);
+    margin: 10px auto 10px;
+    padding: 30px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(85, 85, 85, 0.875);
+    text-align: center;
+}
+.title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
+justify-content: center;
+
+}
+
+  
+.todoitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    border: 10%;
+    outline: none;
+    font-size: 100%;
+    background-color: #edeef0;
+   border-top-left-radius: 7px;
+   border-bottom-left-radius: 7px;
+    padding: 20px;
+  }
+  
+button {
+    border: 10%;
+    outline: none;
+    padding: 17px 50px;
+    margin-left: 5px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-right-radius: 7px;
+   border-bottom-right-radius: 7px;
+  }
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    margin: 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+  
+  }
+ul li:hover{
+    background-color: #edeef0;
+    box-shadow: 0 0 2px grey;
+  }
+  
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    /* border-radius: 50%; */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rWMFAwkUrNvNsyeQ9bUfjVIvkWz1hOvDYA&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+ul li.checked::before {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/638/595/original/vector-check-list-button-icon.jpg);
+  }
+  
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+ul li span:hover {
+    background: #edeef062;
+  }
+  
